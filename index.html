@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InkWave — Privacy Policy</title>
+<style>
+  :root {
+    --ink-shadow: #0A1616;
+    --panel-navy: #132524;
+    --ember: #FF7A3D;
+    --teal: #2BC2B0;
+    --paper: #F3EDE3;
+    --muted: rgba(243, 237, 227, 0.68);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--ink-shadow);
+    color: var(--paper);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+    padding: 2rem 1rem;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    border-bottom: 2px solid var(--ember);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .brand {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    background: linear-gradient(90deg, var(--ember), var(--teal));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline { color: var(--muted); font-style: italic; margin-top: 0.25rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-top: 0.75rem; }
+  h2 {
+    color: var(--teal);
+    font-size: 1.25rem;
+    margin: 2rem 0 0.75rem;
+  }
+  p, li { color: var(--paper); margin-bottom: 0.75rem; }
+  ul { padding-left: 1.5rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--panel-navy);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: var(--panel-navy); color: var(--ember); }
+  td { background: rgba(19, 37, 36, 0.4); }
+  .callout {
+    background: var(--panel-navy);
+    border-left: 4px solid var(--ember);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--panel-navy);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">InkWave</div>
+  <div class="tagline">Where every panel has a voice.</div>
+  <div class="meta">
+    Privacy Policy · Effective September 2025 · Applies to InkWave V1 (Android)
+  </div>
+</header>
+
+<div class="callout">
+  <strong>The short version:</strong> InkWave is an offline-first app. It does not
+  collect, store, transmit, or share any personal data. Everything you do in the app
+  stays on your device. There are no accounts, no analytics, no ads, and no tracking
+  of any kind.
+</div>
+
+<h2>1. What InkWave does NOT collect</h2>
+<ul>
+  <li>No name, email address, or any account information (there is no sign-up)</li>
+  <li>No analytics or usage statistics</li>
+  <li>No advertising or advertising identifiers</li>
+  <li>No location data</li>
+  <li>No crash reports sent to third parties</li>
+  <li>No device identifiers</li>
+  <li>No contacts, photos, or files beyond what you explicitly import</li>
+</ul>
+
+<h2>2. Your library stays on your device</h2>
+<p>All comics, reading progress, bookmarks, settings, and preferences are stored in a
+local database on your device only. InkWave never uploads your library, file names, or
+reading habits anywhere.</p>
+<p>Imported comic files are opened through Android's Storage Access Framework (SAF).
+The app reads only the files you explicitly select, and writes nothing to shared storage.</p>
+
+<h2>3. Network access</h2>
+<p>InkWave uses the internet for <strong>exactly one purpose</strong>: downloading the
+optional narration voice packs (Kokoro, Piper) that <strong>you</strong> explicitly choose
+in Settings. Voice downloads are:</p>
+<ul>
+  <li><strong>User-initiated only</strong> — the app never connects to the network on its own</li>
+  <li><strong>One-time</strong> — once a voice is downloaded, it lives on your device and
+  the network is never touched again for it</li>
+  <li><strong>Anonymous</strong> — downloads are plain file fetches from the voice-model
+  host; no account, identifier, or personal data is sent with the request</li>
+</ul>
+<p>There is no other network activity: no analytics, no ads, no telemetry, no crash
+reporting, no background connections.</p>
+<p><strong>About future advertising:</strong> InkWave may introduce ads in a future
+version. If that happens, this policy will be updated <em>before</em> that version ships,
+the in-app experience will clearly disclose it, and any data the ad provider collects
+will be described here. The current version contains no advertising and no advertising SDKs.</p>
+
+<h2>4. Permissions explained</h2>
+<table>
+  <tr><th>Permission</th><th>Why it's needed</th><th>What actually happens</th></tr>
+  <tr>
+    <td>Internet</td>
+    <td>To download optional narration voice packs you select</td>
+    <td>Plain anonymous file downloads, initiated by you only; no other network use</td>
+  </tr>
+  <tr>
+    <td>Storage / SAF file access</td>
+    <td>To open the comic files you choose</td>
+    <td>Reads only files you explicitly pick; nothing is scanned or uploaded</td>
+  </tr>
+  <tr>
+    <td>Notifications</td>
+    <td>Playback controls for ambient audio</td>
+    <td>Local notifications only; no push notifications</td>
+  </tr>
+  <tr>
+    <td>Foreground service</td>
+    <td>Keep ambient audio playing while reading</td>
+    <td>Runs only while you use the feature</td>
+  </tr>
+</table>
+
+<h2>5. Third-party services</h2>
+<p>InkWave uses <strong>no third-party services</strong> — no ad networks, no analytics
+SDKs, no crash reporting services, no social SDKs. All processing (including on-device OCR
+for narration and voice synthesis) happens locally. OCR uses Google ML Kit's on-device
+APIs, which do not send image data off the device, and downloaded voice packs run entirely
+on-device via ONNX Runtime.</p>
+
+<h2>6. Children's privacy</h2>
+<p>InkWave does not collect data from anyone, including children. Content imported into
+the app is chosen and managed entirely by the user.</p>
+
+<h2>7. Data retention and deletion</h2>
+<p>Because no data leaves your device, you hold all of it:</p>
+<ul>
+  <li>Deleting the app (or clearing app data in Android settings) permanently removes your
+  library database, progress, bookmarks, and settings.</li>
+  <li>Your original comic files are never modified or deleted by the app unless you
+  explicitly delete them through the app's library screen.</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>App settings that may hold sensitive values are encrypted using the Android Keystore
+(AES-256). The app disables Android auto-backup of its private data and never permits
+cleartext network traffic.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If InkWave's data practices ever change, this policy will be updated before the change
+ships, with a new effective date and a note in the app's release notes. The app will never
+silently begin collecting data.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <strong>ngangfibel@gmail.com</strong></p>
+
+<footer>
+  This policy applies to InkWave V1. Last updated: September 2025.
+</footer>
+
+</div>
+</body>
+</html>
